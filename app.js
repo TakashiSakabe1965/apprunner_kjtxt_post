@@ -46,6 +46,10 @@ app.post('/kjtxt', async (req, res) => {
     }
 });
 
+app.get('/', (req, res) => {
+  res.send('Hello from App Runner!');
+});
+
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
 });
